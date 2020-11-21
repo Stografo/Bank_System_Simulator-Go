@@ -35,3 +35,8 @@ func (a *Account) WithDraw(amount int) error {
 	a.balance -= amount
 	return nil
 }
+
+//updateOwner cambia el propietario
+func (a *Account) updateOwner(newOwner string) {
+	a.owner = newOwner
+}
